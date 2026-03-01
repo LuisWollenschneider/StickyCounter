@@ -1,0 +1,176 @@
+{
+  "fill" : {
+    "automatic-gradient" : "display-p3:0.98210,1.00000,0.95097,1.00000",
+    "orientation" : {
+      "start" : {
+        "x" : 0.5,
+        "y" : 0
+      },
+      "stop" : {
+        "x" : 0.5,
+        "y" : 0.7
+      }
+    }
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "display-p3:0.72568,0.57458,0.11558,1.00000",
+              "display-p3:0.96783,0.32690,0.10756,0.83643"
+            ],
+            "orientation" : {
+              "start" : {
+                "x" : 0.5,
+                "y" : 0
+              },
+              "stop" : {
+                "x" : 0.5,
+                "y" : 0.7
+              }
+            }
+          },
+          "hidden" : false,
+          "image-name" : "1.png",
+          "name" : "1",
+          "position" : {
+            "scale" : 0.56,
+            "translation-in-points" : [
+              -346.9200000000001,
+              0
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "layers" : [
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "display-p3:0.72568,0.57458,0.11558,1.00000",
+              "display-p3:0.96783,0.32690,0.10756,0.83643"
+            ],
+            "orientation" : {
+              "start" : {
+                "x" : 0.5,
+                "y" : 0
+              },
+              "stop" : {
+                "x" : 0.5,
+                "y" : 0.7
+              }
+            }
+          },
+          "hidden" : false,
+          "image-name" : "4.png",
+          "name" : "4",
+          "position" : {
+            "scale" : 0.56,
+            "translation-in-points" : [
+              -27.71875,
+              1.1200000000000045
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "layers" : [
+        {
+          "blend-mode-specializations" : [
+            {
+              "appearance" : "dark",
+              "value" : "normal"
+            }
+          ],
+          "fill" : "automatic",
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "1.png",
+          "name" : "1",
+          "position" : {
+            "scale" : 0.56,
+            "translation-in-points" : [
+              269,
+              -594.4565624999999
+            ]
+          }
+        },
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "display-p3:0.72568,0.57458,0.11558,1.00000",
+              "display-p3:0.96783,0.32690,0.10756,0.83643"
+            ],
+            "orientation" : {
+              "start" : {
+                "x" : 0.5,
+                "y" : 0
+              },
+              "stop" : {
+                "x" : 0.5,
+                "y" : 0.7
+              }
+            }
+          },
+          "hidden" : false,
+          "image-name" : "2.png",
+          "name" : "2",
+          "position" : {
+            "scale" : 0.56,
+            "translation-in-points" : [
+              300.15999999999997,
+              -118.98749999999995
+            ]
+          }
+        },
+        {
+          "fill" : "automatic",
+          "hidden" : false,
+          "image-name" : "3.png",
+          "name" : "3",
+          "position" : {
+            "scale" : 0.56,
+            "translation-in-points" : [
+              304.0799999999999,
+              358.8359375
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
