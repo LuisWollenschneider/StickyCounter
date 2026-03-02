@@ -316,6 +316,7 @@ struct CounterCardView: View {
     var isPopout: Bool = false
     var uiScale: Double = 1.0
     @EnvironmentObject var store: CounterStore
+    @FocusState private var isEditingCount: Bool
     
     // Extracted colors to match the design roughly
     let cardBackgroundColor = Color(red: 0.12, green: 0.12, blue: 0.13)
@@ -369,13 +370,30 @@ struct CounterCardView: View {
                 Spacer()
                 
                 VStack {
-                    TextField("Count", value: $counter.count, format: .number)
-                        .font(.system(size: 80 * uiScale, weight: .heavy, design: .rounded))
-                        .foregroundColor(Color(white: 0.9))
-                        .multilineTextAlignment(.center)
-                        .textFieldStyle(.plain)
-                        .minimumScaleFactor(0.3)
-                        .frame(maxWidth: .infinity)
+                    ZStack {
+                        TextField("", value: $counter.count, format: .number)
+                            .font(.system(size: 80 * uiScale, weight: .heavy, design: .rounded))
+                            .foregroundColor(Color(white: 0.9))
+                            .multilineTextAlignment(.center)
+                            .textFieldStyle(.plain)
+                            .minimumScaleFactor(0.3)
+                            .frame(maxWidth: .infinity)
+                            .focused($isEditingCount)
+                            .opacity(isEditingCount ? 1 : 0)
+
+                        Text("\(counter.count)")
+                            .font(.system(size: 80 * uiScale, weight: .heavy, design: .rounded))
+                            .foregroundColor(Color(white: 0.9))
+                            .multilineTextAlignment(.center)
+                            .contentTransition(.numericText(value: Double(counter.count)))
+                            .animation(.default, value: counter.count)
+                            .minimumScaleFactor(0.3)
+                            .frame(maxWidth: .infinity)
+                            .opacity(isEditingCount ? 0 : 1)
+                            .onTapGesture {
+                                isEditingCount = true
+                            }
+                    }
                     
                     HStack(spacing: 2 * uiScale) {
                         Text("±")
